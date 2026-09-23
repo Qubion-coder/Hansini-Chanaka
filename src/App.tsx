@@ -511,26 +511,26 @@ export default function WeddingInvitation() {
               </div>
             </motion.button>
 
-            <section className="w-full relative flex items-start justify-center overflow-hidden bg-[#F5EDDC] min-h-[100dvh] pt-12 pb-12">
+            <section className="w-full relative flex items-start justify-center overflow-hidden bg-[#F5EDDC] min-h-[100dvh] pt-6 md:pt-12 pb-12">
               <div
                 className="absolute inset-0 bg-center bg-cover bg-no-repeat"
                 style={{ backgroundImage: `url("/ChatGPT%20Image%20Sep%2023,%202026,%2002_48_11%20AM.png")` }}
                 aria-hidden="true"
               />
 
-              <div className="relative z-10 w-full max-w-5xl px-6 text-center flex flex-col items-center mt-2">
+              <div className="relative z-10 w-full max-w-5xl px-6 text-center flex flex-col items-center mt-0 md:mt-2">
                 {/* SRI SUBA MANGALAM */}
-                <h2 className="text-xl md:text-3xl text-[#7a1f1a] tracking-[0.2em] md:tracking-[0.3em] font-bold mb-3" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
+                <h2 className="text-xl md:text-3xl text-[#7a1f1a] tracking-[0.2em] md:tracking-[0.3em] font-bold mb-1.5 md:mb-3" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
                   ශ්‍රී සුභ මංගලම්
                 </h2>
 
                 {/* YOU ARE INVITED... */}
-                <p className="text-[11px] md:text-sm text-[#8f7322] tracking-[0.1em] font-bold mb-4" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
+                <p className="text-[11px] md:text-sm text-[#8f7322] tracking-[0.1em] font-bold mb-2 md:mb-4" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
                   විවාහ මංගල්‍යයට සාදරයෙන් ආරාධනා කරමු
                 </p>
 
                 {/* Divider */}
-                <div className="flex items-center justify-center gap-3 w-[140px] md:w-[180px] mb-6">
+                <div className="flex items-center justify-center gap-3 w-[140px] md:w-[180px] mb-3 md:mb-6">
                   <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#b5932f]"></span>
                   <span className="h-1.5 w-1.5 shrink-0 rotate-45 bg-[#8f7322]"></span>
                   <span className="h-px flex-1 bg-gradient-to-r from-[#b5932f] to-transparent"></span>
@@ -538,23 +538,23 @@ export default function WeddingInvitation() {
 
                 {/* Names */}
                 <h1 
-                  className="text-4xl sm:text-6xl md:text-7xl text-[#7a1f1a] font-bold leading-none mb-8 whitespace-nowrap w-full"
+                  className="text-4xl sm:text-6xl md:text-7xl text-[#7a1f1a] font-bold leading-none mb-4 md:mb-8 whitespace-nowrap w-full"
                   style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}
                 >
                   {INVITATION.couple.bride} <span className="text-[#8f7322] font-normal mx-2">&amp;</span> {INVITATION.couple.groom}
                 </h1>
 
                 {/* Parents */}
-                <div className="grid grid-cols-2 gap-2 md:gap-8 w-full max-w-2xl mb-8" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
+                <div className="grid grid-cols-2 gap-2 md:gap-8 w-full max-w-2xl mb-4 md:mb-8" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
                   <div className="flex flex-col items-center text-[#473c1f]">
-                    <span className="font-bold text-[11px] md:text-sm mb-2 text-[#7a1f1a]">ආදරණීය දියණිය</span>
+                    <span className="font-bold text-[11px] md:text-sm mb-1 md:mb-2 text-[#7a1f1a]">ආදරණීය දියණිය</span>
                     <div className="text-[9px] md:text-xs text-[#706444] leading-relaxed flex flex-col items-center gap-0.5">
                       <span>ආර්. එම්. චන්ද්‍රපාල රාජපක්ෂ</span>
                       <span>එච්. එම්. නන්දනී ප්‍රේමලතා</span>
                     </div>
                   </div>
                   <div className="flex flex-col items-center text-[#473c1f]">
-                    <span className="font-bold text-[11px] md:text-sm mb-2 text-[#7a1f1a]">ආදරණීය පුත්‍රයා</span>
+                    <span className="font-bold text-[11px] md:text-sm mb-1 md:mb-2 text-[#7a1f1a]">ආදරණීය පුත්‍රයා</span>
                     <div className="text-[9px] md:text-xs text-[#706444] leading-relaxed flex flex-col items-center gap-0.5">
                       <span>ආර්. ඒ. සුමිත් රණසිංහ</span>
                       <span>පී. ඒ. ඈන් තෙරේස් ප්‍රියන්තිනි</span>
