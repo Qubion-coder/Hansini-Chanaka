@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'nimsara';
+  src: url('/fonts/sinhanimsara2012_0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-nimsara {
+  font-family: 'nimsara' !important;
+}
+
 @theme {
   --font-serif: "Abhaya Libre", serif;
   --font-script: "Abhaya Libre", cursive;

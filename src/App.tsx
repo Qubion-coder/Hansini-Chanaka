@@ -4,9 +4,9 @@ import { Sparkles, MapPin, Calendar, Clock, ChevronDown } from "lucide-react";
 
 const INVITATION = {
   couple: {
-    bride: "හංසිනි",
+    bride: "හංසිනී",
     groom: "චානක",
-    brideFull: "හංසිනි කාංචනා",
+    brideFull: "හංසිනී කාංචනා",
     groomFull: "චානක රණසිංහ",
   },
   date: {
@@ -24,7 +24,7 @@ const INVITATION = {
     name: "Rongfa Regency (Kings Court)",
     city: "Ganemulla",
     mapQuery: "Rongfa Regency, Ganemulla",
-    googleMapsLink: "https://maps.app.goo.gl/wfDNdBa7SC1GDEWdA?g_st=ac",
+    googleMapsLink: "https://maps.app.goo.gl/MgbqGoDUBDAnUpvg8",
   },
   rsvpContacts: [
     "Chanaka - +94 77 123 4567",
@@ -402,24 +402,24 @@ export default function WeddingInvitation() {
                   <source src="/intro_video.mp4" type="video/mp4" />
                 </video>
 
-                <div className="absolute inset-0 flex flex-col items-center justify-start pt-[20vh] md:pt-[25vh] z-[160] pointer-events-none text-center bg-transparent transition-all duration-1000">
+                <div className="absolute inset-0 flex flex-col items-center justify-start pt-6 md:pt-8 z-[160] pointer-events-none text-center bg-transparent transition-all duration-1000">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 2, delay: 0.5, ease: "easeOut" }}
                     className="flex flex-col items-center px-4 w-full"
                   >
-                    <h2 className="text-5xl md:text-7xl text-[#1a1a1a] mb-6 tracking-wide drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
+                    <h2 className="text-4xl md:text-5xl text-[#1a1a1a] mb-4 tracking-wide drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif", fontWeight: 600 }}>
                       විවාහ ආරාධනයයි
                     </h2>
                     
-                    <div className="flex items-center justify-center gap-4 w-[200px] md:w-[280px] mb-8">
+                    <div className="flex items-center justify-center gap-4 w-[160px] md:w-[220px] mb-5">
                       <div className="h-[2px] flex-1 bg-gradient-to-r from-transparent to-[#1a1a1a]/80 drop-shadow-[0_0_5px_rgba(255,255,255,0.8)]"></div>
-                      <div className="w-2 h-2 rotate-45 bg-[#1a1a1a] drop-shadow-[0_0_5px_rgba(255,255,255,0.8)]"></div>
+                      <div className="w-1.5 h-1.5 rotate-45 bg-[#1a1a1a] drop-shadow-[0_0_5px_rgba(255,255,255,0.8)]"></div>
                       <div className="h-[2px] flex-1 bg-gradient-to-r from-[#1a1a1a]/80 to-transparent drop-shadow-[0_0_5px_rgba(255,255,255,0.8)]"></div>
                     </div>
 
-                    <p className="text-3xl md:text-5xl text-[#1a1a1a] tracking-[0.2em] font-bold drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
+                    <p className="text-2xl md:text-3xl text-[#1a1a1a] tracking-[0.1em] font-bold drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
                       {INVITATION.couple.bride} සහ {INVITATION.couple.groom}
                     </p>
                   </motion.div>
@@ -460,7 +460,7 @@ export default function WeddingInvitation() {
             </button>
 
             <div className="relative z-[105] flex flex-col items-center text-center">
-              <span className="text-[0.66rem] md:text-sm uppercase tracking-[0.4em]" style={{ fontFamily: "var(--font-mp-body), 'Noto Sans Sinhala', sans-serif", color: "rgb(142, 116, 39)", fontWeight: 600 }}>විවාහ මංගල්‍යය</span>
+              <span className="text-2xl md:text-3xl tracking-[0.4em] font-nimsara" style={{ color: "rgb(142, 116, 39)", fontWeight: 600 }}>újdy ux.,Hh</span>
               <div className="mt-5 mb-2">
                 <span className="inline-flex items-center justify-center gap-2.5" aria-hidden="true" style={{ width: "140px" }}>
                   <span className="h-px flex-1" style={{ background: "linear-gradient(90deg, transparent, rgb(210, 185, 122))" }}></span>
@@ -468,7 +468,11 @@ export default function WeddingInvitation() {
                   <span className="h-px flex-1" style={{ background: "linear-gradient(90deg, rgb(210, 185, 122), transparent)" }}></span>
                 </span>
               </div>
-              <p className="leading-[1.1]" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 500, color: "rgb(122, 31, 26)", fontSize: "clamp(2.5rem, 8vw, 4rem)" }}>{INVITATION.couple.bride} <span style={{ color: "rgb(142, 116, 39)" }}>&amp;</span> {INVITATION.couple.groom}</p>
+              <p className="leading-[1.1] flex items-center justify-center gap-4" style={{ color: "rgb(122, 31, 26)", fontSize: "clamp(2.5rem, 8vw, 4rem)" }}>
+                <span className="font-nimsara">yxisks</span> 
+                <span className="font-nimsara" style={{ color: "rgb(142, 116, 39)", fontSize: "clamp(1.5rem, 5vw, 2.5rem)" }}>iy</span> 
+                <span className="font-nimsara">pdkl</span>
+              </p>
               <p className="mt-3 text-[0.86rem] md:text-base font-bold" style={{ fontFamily: "var(--font-mp-body), 'Noto Sans Sinhala', sans-serif", color: "rgb(71, 60, 31)" }}>2027 ජනවාරි 28 වන බ්‍රහස්පතින්දා</p>
               
               <button 
@@ -511,425 +515,396 @@ export default function WeddingInvitation() {
               </div>
             </motion.button>
 
-            <section className="w-full relative flex items-start justify-center overflow-hidden bg-[#F5EDDC] min-h-[100dvh] pt-6 md:pt-12 pb-12">
-              <div
-                className="absolute inset-0 bg-center bg-cover bg-no-repeat"
-                style={{ backgroundImage: `url("/ChatGPT%20Image%20Sep%2023,%202026,%2002_48_11%20AM.png")` }}
-                aria-hidden="true"
-              />
-
-              <div className="relative z-10 w-full max-w-5xl px-6 text-center flex flex-col items-center mt-0 md:mt-2">
-                {/* SRI SUBA MANGALAM */}
-                <h2 className="text-xl md:text-3xl text-[#7a1f1a] tracking-[0.2em] md:tracking-[0.3em] font-bold mb-1.5 md:mb-3" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
-                  ශ්‍රී සුභ මංගලම්
-                </h2>
-
-                {/* YOU ARE INVITED... */}
-                <p className="text-[11px] md:text-sm text-[#8f7322] tracking-[0.1em] font-bold mb-2 md:mb-4" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
-                  විවාහ මංගල්‍යයට සාදරයෙන් ආරාධනා කරමු
+            <section id="hero" className="relative overflow-hidden pb-0 bg-[#F5EDDC]">
+              <div className="pointer-events-none relative mx-auto flex justify-center" aria-hidden="true">
+                <div style={{ width: "min(72vw, 520px)", height: "min(72vw, 520px)", marginTop: "calc(-0.5 * min(72vw, 520px))", animation: "spin-slow 40s linear infinite" }}>
+                  <div aria-hidden="true" style={{ width: "100%", height: "100%", opacity: 0.9, background: "linear-gradient(180deg, #D8B45F 0%, #B98A2F 55%, #8C6420 100%)", WebkitMaskImage: "url(/Gemini_Generated_Image_e4kwdre4kwdre4kw-removebg-preview.png)", maskImage: "url(/Gemini_Generated_Image_e4kwdre4kwdre4kw-removebg-preview.png)", WebkitMaskRepeat: "no-repeat", maskRepeat: "no-repeat", WebkitMaskSize: "contain", maskSize: "contain", WebkitMaskPosition: "center", maskPosition: "center" }}></div>
+                </div>
+              </div>
+              
+              <div className="relative mx-auto max-w-2xl px-6 text-center sm:px-8 pb-12 z-10 mt-6">
+                <div>
+                  <h1 aria-label="සාදර ඇරයුමයි !" className="-mt-1" style={{ fontSize: "clamp(2.1rem,8.5vw,3.4rem)", lineHeight: 1.25, backgroundImage: "linear-gradient(170deg, #D8B45F 0%, #B98A2F 45%, #8C6420 100%)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
+                    <span aria-hidden="true" className="font-nimsara" style={{ fontVariantLigatures: "none" }}>idor werhquhs</span>
+                    <span aria-hidden="true" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif", fontWeight: 600 }}> !</span>
+                  </h1>
+                </div>
+                
+                <div className="mt-7 grid grid-cols-2 gap-5 sm:gap-10">
+                  <div className="flex flex-col items-center gap-3">
+                    <p className="text-[0.95rem] leading-[1.8] sm:text-base text-[#5A4A33] whitespace-pre-line" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
+                      ආර්. එම්. චන්ද්‍රපාල රාජපක්ෂ සහ
+                      එච්. එම්. නන්දනී ප්‍රේමලතා
+                      යන දෙපළගේ
+                      ආදරණීය දියණිය
+                    </p>
+                    <p className="mt-auto" aria-label="හංසිනී කාංචනා">
+                      <span aria-hidden="true" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 700, color: "#8C6420", fontSize: "clamp(1.4rem,4.2vw,2rem)", lineHeight: 1.15 }}>
+                        හංසිනී කාංචනා
+                      </span>
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-center gap-3">
+                    <p className="text-[0.95rem] leading-[1.8] sm:text-base text-[#5A4A33] whitespace-pre-line" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
+                      ආර්. ඒ. සුමිත් රණසිංහ සහ
+                      පී. ඒ. ඈන් තෙරේස් ප්‍රියන්තිනි
+                      යන දෙපළගේ
+                      ආදරණීය පුත්‍රයා
+                    </p>
+                    <p className="mt-auto" aria-label="චානක රණසිංහ">
+                      <span aria-hidden="true" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 700, color: "#8C6420", fontSize: "clamp(1.4rem,4.2vw,2rem)", lineHeight: 1.15 }}>
+                        චානක රණසිංහ
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="relative mx-auto mt-7 w-[min(84%,440px)]">
+                  <div aria-hidden="true" className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" style={{ width: "150%", height: "128%", zIndex: 0, background: "radial-gradient(60% 58% at 50% 46%, rgba(252, 248, 238, 0.96) 0%, rgba(252, 248, 238, 0.85) 38%, rgba(252, 248, 238, 0.5) 62%, rgba(252, 248, 238, 0) 82%)" }}></div>
+                  <div aria-hidden="true" className="pointer-events-none absolute bottom-[8%] left-1/2 -translate-x-1/2" style={{ width: "62%", height: "9%", zIndex: 1, borderRadius: "50%", background: "radial-gradient(50% 50% at 50% 50%, rgba(140, 100, 32, 0.22) 0%, rgba(140, 100, 32, 0) 70%)", filter: "blur(4px)" }}></div>
+                  <img src="/ChatGPT%20Image%20Sep%2023,%202026,%2002_48_11%20AM.png" alt="හංසිනී සහ චානක" loading="eager" draggable="false" className="relative z-[2] w-full select-none rounded-[2rem] object-cover" />
+                </div>
+                
+                <p className="mx-auto mt-6 max-w-[36ch] text-[1.02rem] leading-[1.9] text-[#5A4A33]" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
+                  චාරිත්‍රානුකූලව අතිනත ගැනීමේ ප්‍රීතිය නිමිත්තෙන්
                 </p>
-
-                {/* Divider */}
-                <div className="flex items-center justify-center gap-3 w-[140px] md:w-[180px] mb-3 md:mb-6">
-                  <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#b5932f]"></span>
-                  <span className="h-1.5 w-1.5 shrink-0 rotate-45 bg-[#8f7322]"></span>
-                  <span className="h-px flex-1 bg-gradient-to-r from-[#b5932f] to-transparent"></span>
-                </div>
-
-                {/* Names */}
-                <h1 
-                  className="text-4xl sm:text-6xl md:text-7xl text-[#7a1f1a] font-bold leading-none mb-4 md:mb-8 whitespace-nowrap w-full"
-                  style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}
-                >
-                  {INVITATION.couple.bride} <span className="text-[#8f7322] font-normal mx-2">&amp;</span> {INVITATION.couple.groom}
-                </h1>
-
-                {/* Parents */}
-                <div className="grid grid-cols-2 gap-2 md:gap-8 w-full max-w-2xl mb-4 md:mb-8" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
-                  <div className="flex flex-col items-center text-[#473c1f]">
-                    <span className="font-bold text-[11px] md:text-sm mb-1 md:mb-2 text-[#7a1f1a]">ආදරණීය දියණිය</span>
-                    <div className="text-[9px] md:text-xs text-[#706444] leading-relaxed flex flex-col items-center gap-0.5">
-                      <span>ආර්. එම්. චන්ද්‍රපාල රාජපක්ෂ</span>
-                      <span>එච්. එම්. නන්දනී ප්‍රේමලතා</span>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center text-[#473c1f]">
-                    <span className="font-bold text-[11px] md:text-sm mb-1 md:mb-2 text-[#7a1f1a]">ආදරණීය පුත්‍රයා</span>
-                    <div className="text-[9px] md:text-xs text-[#706444] leading-relaxed flex flex-col items-center gap-0.5">
-                      <span>ආර්. ඒ. සුමිත් රණසිංහ</span>
-                      <span>පී. ඒ. ඈන් තෙරේස් ප්‍රියන්තිනි</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Date Large */}
-                <div className="flex items-center justify-center gap-4 md:gap-8 border-y-[1.5px] border-[#7a1f1a]/20 py-2 md:py-4 mb-1.5 md:mb-4 w-[85%] max-w-[340px] relative">
-                  <span className="text-[#7a1f1a] tracking-[0.1em] md:tracking-[0.15em] font-bold text-xs md:text-sm flex-1 text-right" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
-                    ජනවාරි
-                  </span>
-                  <span className="text-5xl md:text-6xl text-[#7a1f1a] font-bold leading-none mx-2" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-                    28
-                  </span>
-                  <span className="text-[#7a1f1a] tracking-[0.1em] md:tracking-[0.15em] font-bold text-xs md:text-sm flex-1 text-left" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
+                
+                <div className="mt-4">
+                  <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 600, color: "#8C6420", fontSize: "clamp(1.3rem,3.4vw,1.8rem)", letterSpacing: "0.18em" }}>
                     2027
-                  </span>
+                  </div>
+                  <div className="mx-auto mt-1.5 flex max-w-md items-center justify-center gap-4 sm:gap-6">
+                    <span className="flex-1 py-1.5 text-center text-[#5A4A33] font-bold" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif", fontSize: "clamp(1.05rem,2.8vw,1.3rem)", borderTop: "1.5px solid rgba(140, 100, 32, 0.85)", borderBottom: "1.5px solid rgba(140, 100, 32, 0.85)" }}>
+                      ජනවාරි
+                    </span>
+                    <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 700, color: "#8C6420", fontSize: "clamp(3rem,10vw,4.4rem)", lineHeight: 0.95 }}>
+                      28
+                    </span>
+                    <span className="flex-1 py-1.5 text-center text-[#5A4A33] font-bold" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif", fontSize: "clamp(1.05rem,2.8vw,1.3rem)", borderTop: "1.5px solid rgba(140, 100, 32, 0.85)", borderBottom: "1.5px solid rgba(140, 100, 32, 0.85)" }}>
+                      බ්‍රහස්පතින්දා
+                    </span>
+                  </div>
+                  <div className="mt-2.5 text-[1rem] text-[#5A4A33]" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
+                    {INVITATION.time.welcome} සිට {INVITATION.time.ceremonyEnd} දක්වා
+                  </div>
+                  <p className="mt-1 text-[0.92rem]" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", color: "#8A7A60" }}>
+                    (පෝරුවේ චාරිත්‍ර {INVITATION.time.ceremonyStart} ට | විවාහ ලියාපදිංචිය {INVITATION.time.registration} ට)
+                  </p>
                 </div>
+                
+                <div className="mt-6 flex flex-col items-center gap-1.5">
+                  <p className="font-bold text-[#5A4A33]" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif", fontSize: "clamp(1.1rem,3vw,1.35rem)" }}>
+                    {INVITATION.venue.name}
+                  </p>
+                  <p className="max-w-[40ch] text-[1rem] leading-[1.85] text-[#5A4A33]" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
+                    හෝටල් පරිශ්‍රයේ දී පැවැත්වෙන මංගල උත්සවයට
+                  </p>
+                  <p className="max-w-[40ch] text-[1rem] leading-[1.85] text-[#5A4A33]" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
+                    ඔබට අපි ගෞරවයෙන් ආරාධනා කරන්නෙමු.
+                  </p>
+                </div>
+              </div>
+            </section>
 
-                {/* Date Full */}
-                <p className="text-sm md:text-lg font-bold text-[#473c1f] tracking-[0.1em] -mt-1 sm:mt-0" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
-                  2027 ජනවාරි 28 වන බ්‍රහස්පතින්දා
+            <section className="relative w-full bg-[#F5EDDC] pt-12 md:pt-16 pb-16 flex flex-col items-center overflow-hidden border-t border-[#8C6420]/10">
+              <div className="relative mx-auto max-w-2xl text-center z-10 px-6 w-full">
+                <span className="mb-2 block text-[0.66rem] uppercase tracking-[0.34em]" style={{ fontFamily: "'Montserrat', sans-serif", color: "#B98A2F" }}>
+                  Countdown
+                </span>
+                
+                <h2 style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 700, color: "#8C6420", fontSize: "clamp(1.6rem,4vw,2.3rem)" }}>
+                  අපේ සුබ දවස උදා වීමට...
+                </h2>
+                
+                <div aria-hidden="true" className="mt-3" style={{ width: "120px", aspectRatio: "2100 / 756", margin: "0 auto", background: "linear-gradient(180deg, #D8B45F 0%, #B98A2F 55%, #8C6420 100%)", WebkitMaskImage: "url(/lotus-mandala/lotus-flourish.svg)", maskImage: "url(/lotus-mandala/lotus-flourish.svg)", WebkitMaskRepeat: "no-repeat", maskRepeat: "no-repeat", WebkitMaskSize: "contain", maskSize: "contain", WebkitMaskPosition: "center", maskPosition: "center" }}></div>
+                
+                <div className="mt-2 mb-8 w-full flex justify-center">
+                  <CountdownTimer isDark={false} />
+                </div>
+                
+                <p className="mt-8 text-[0.95rem] font-bold" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", color: "#8A7A60" }}>
+                  2027 ජනවාරි 28 බ්‍රහස්පතින්දා
                 </p>
               </div>
             </section>
 
-            <section
-              id="details"
-              className="relative pt-8 md:pt-20 pb-12 md:pb-32 w-full flex flex-col items-center overflow-hidden"
+            <section id="events" className="relative mx-auto w-full px-6 py-16 sm:px-7 sm:py-24"
               style={{
                 backgroundImage: 'url("/vintage_paper.png")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'
-              }}
-            >
-              <div className="absolute inset-4 md:inset-8 ] pointer-events-none z-10" />
-              <div className="absolute inset-5 md:inset-10 ] pointer-events-none z-10" />
-
-              <div className="max-w-[1100px] w-full flex flex-col items-center text-center relative z-20 px-6">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  className="flex flex-col items-center mb-16 space-y-6"
-                >
-                  <div className="flex items-center gap-4 opacity-40">
-                    <div className="h-px w-8 bg-[#8f7322]" />
-                    <Sparkles className="w-4 h-4 text-[#b5932f]" />
-                    <div className="h-px w-8 bg-[#8f7322]" />
+              }}>
+              <div className="mb-10 text-center sm:mb-14">
+                <span className="mb-2 block text-[0.66rem] uppercase" style={{ color: "#B98A2F", fontFamily: "'Montserrat', sans-serif", letterSpacing: "0.34em" }}>
+                  Event Details
+                </span>
+                <h2 className="leading-tight" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 700, color: "#8C6420", fontSize: "clamp(1.7rem,4.2vw,2.6rem)" }}>
+                  උත්සව විස්තර
+                </h2>
+                <div aria-hidden="true" className="mt-3" style={{ width: "120px", aspectRatio: "2100 / 756", margin: "0 auto", background: "linear-gradient(180deg, #D8B45F 0%, #B98A2F 55%, #8C6420 100%)", WebkitMaskImage: "url(/lotus-mandala/lotus-flourish.svg)", maskImage: "url(/lotus-mandala/lotus-flourish.svg)", WebkitMaskRepeat: "no-repeat", maskRepeat: "no-repeat", WebkitMaskSize: "contain", maskSize: "contain", WebkitMaskPosition: "center", maskPosition: "center" }}></div>
+              </div>
+              
+              <div className="mx-auto flex max-w-4xl flex-wrap justify-center gap-5 sm:gap-8 relative z-10">
+                <div className="group flex w-full flex-col items-center gap-2 px-8 pb-10 pt-12 text-center sm:w-[calc((100%-2rem)/2)]" style={{ background: "rgb(252, 248, 238)", border: "1px solid rgba(185, 138, 47, 0.35)", borderRadius: "999px 999px 18px 18px", boxShadow: "rgba(120, 86, 30, 0.45) 0px 16px 36px -26px" }}>
+                  <span className="mb-1 grid h-16 w-16 place-items-center rounded-full transition-transform duration-300 group-hover:scale-110" style={{ background: "linear-gradient(150deg, #D8B45F, #B98A2F 55%, #8C6420)", color: "#FDF8EC", boxShadow: "0 10px 20px -10px rgba(120,86,30,0.7)" }}>
+                    <MapPin className="w-7 h-7 text-[#FDF8EC]" />
+                  </span>
+                  <h3 style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 700, color: "#8C6420", fontSize: "clamp(1.15rem,3vw,1.4rem)", lineHeight: 1.3 }}>
+                    මංගල උත්සවය සහ පෝරුවේ චාරිත්‍රය
+                  </h3>
+                  <div style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", color: "#5A4A33", fontSize: "clamp(0.98rem,2.4vw,1.08rem)" }}>
+                    {INVITATION.venue.name} – {INVITATION.venue.city}
                   </div>
-
-                  <div className="text-[#8f7322] space-y-6 max-w-3xl mx-auto leading-relaxed text-base md:text-lg">
-                    <p className="text-[#473c1f] tracking-normal leading-relaxed text-sm md:text-lg" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
-                      ආර්. එම්. චන්ද්‍රපාල රාජපක්ෂ සහ එච්. එම්. නන්දනී ප්‍රේමලතා<br/>යන දෙපළගේ ආදරණීය දියණිය වන
-                    </p>
-                    <h3 className="text-3xl md:text-5xl font-bold text-[#b5932f] mt-4 mb-8 tracking-normal drop-shadow-sm" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
-                      {INVITATION.couple.brideFull}
-                    </h3>
-
-                    <p className="text-[#473c1f] tracking-normal leading-relaxed mt-10 text-sm md:text-lg" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
-                      ආර්. ඒ. සුමිත් රණසිංහ සහ පී. ඒ. ඈන් තෙරේස් ප්‍රියන්තිනි<br/>යන දෙපළගේ ආදරණීය පුත් වන
-                    </p>
-                    <h3 className="text-3xl md:text-5xl font-bold text-[#b5932f] mt-4 mb-4 tracking-normal drop-shadow-sm" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
-                      {INVITATION.couple.groomFull}
-                    </h3>
-
-                    <p className="text-slate-700 max-w-2xl mx-auto pt-4 font-sans">
-                      සමඟ අතිනත ගන්නා සොඳුරු මොහොත, ඔබගේ ආශීර්වාදයෙන් වර්ණවත් කර ගැනීමට සෙනෙහසින් ඇරයුම් කරන්නෙමු.
-                    </p>
-
-
-
-
+                  <span className="my-1.5 h-px w-10" style={{ background: "#D8B45F" }} aria-hidden="true"></span>
+                  <p className="text-[0.95rem] leading-[1.8]" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", color: "#8A7A60" }}>
+                    පෝරුවේ චාරිත්‍රය: {INVITATION.time.ceremonyStart} ට<br/>විවාහ ලියාපදිංචිය: {INVITATION.time.registration} ට<br/>ඉන් අනතුරුව මංගල භෝජන සංග්‍රහය
+                  </p>
+                </div>
+              </div>
+              
+              <div className="mx-auto mt-12 max-w-md space-y-4 relative z-10">
+                <div className="relative">
+                  <div className="rounded-2xl overflow-hidden" style={{ background: "#FCF8EE", border: "1px solid rgba(185, 138, 47, 0.4)", boxShadow: "0 18px 38px -28px rgba(140, 100, 32, 0.35)" }}>
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+of+Chanaka+and+Hansini&dates=20270128T023000Z/20270128T103000Z&details=Join+us+to+celebrate+the+wedding+of+Chanaka+and+Hansini!&location=Rongfa+Regency,+Ganemulla,+Sri+Lanka" target="_blank" rel="noopener noreferrer" className="w-full flex items-center text-left transition-colors hover:bg-white/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 gap-4 px-4 sm:px-5 py-4">
+                      <span className="flex-shrink-0 rounded-full flex items-center justify-center transition-colors w-10 h-10" style={{ background: "linear-gradient(135deg, #B98A2F, #8C6420)" }}>
+                        <Calendar className="w-5 h-5 text-[#FDF8EC]" />
+                      </span>
+                      <span className="flex-1 min-w-0">
+                        <span className="block leading-tight text-lg" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", color: "#8C6420" }}>දිනය සුරකින්න</span>
+                        <span className="block text-xs mt-0.5" style={{ color: "rgba(90, 74, 51, 0.65)" }}>ඔබගේ දින දර්ශනයට එක් කරන්න</span>
+                      </span>
+                      <span className="flex-shrink-0 rounded-full flex items-center justify-center w-8 h-8" style={{ backgroundColor: "rgba(140, 100, 32, 0.06)" }}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right w-4 h-4" style={{ color: "rgb(140, 100, 32)" }}><path d="m9 18 6-6-6-6"></path></svg>
+                      </span>
+                    </a>
                   </div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="mb-8"
-                >
-                  <h2 className="text-xl md:text-2xl text-[#b5932f] tracking-[0.5em] font-bold">
-                    ශ්‍රී සුභ මංගලම්
-                  </h2>
-                </motion.div>
-
-                <div className="relative w-full flex flex-col items-center justify-center my-8 md:my-12 mb-12 md:mb-24">
-                  <motion.div
-                    initial={{ opacity: 0, y: 24 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="relative z-20 w-full max-w-[560px] bg-gradient-to-b from-white to-[#fcfcfc] p-8 md:p-14 rounded-3xl border border-[#b5932f]/30 shadow-[0_0_50px_-12px_rgba(143,115,34,0.25)] flex flex-col items-center justify-center text-center overflow-hidden"
-                  >
-                    <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#8f7322] via-[#e6c555] to-[#8f7322]" />
-                    <div className="absolute inset-2 border border-[#b5932f]/10 rounded-[1.5rem] pointer-events-none" />
-
-                    <div className="w-full text-left grid grid-cols-1 gap-8 relative z-10">
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 rounded-full bg-[#b5932f]/10 flex items-center justify-center shrink-0 border border-[#b5932f]/20 shadow-inner">
-                          <Calendar className="w-5 h-5 text-[#b5932f]" />
-                        </div>
-                        <div className="pt-1">
-                          <div className="text-xs md:text-[11px] tracking-[0.5em] font-bold text-[#8f7322]/50 mb-1">
-                            දිනය
-                          </div>
-                          <div className="text-base md:text-lg text-[#8f7322] tracking-wide font-bold">
-                            {INVITATION.date.displayLong}
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 rounded-full bg-[#8f7322]/10 flex items-center justify-center shrink-0 border border-[#8f7322]/20 shadow-inner">
-                          <Clock className="w-5 h-5 text-[#8f7322]" />
-                        </div>
-                        <div className="pt-1">
-                          <div className="text-xs md:text-[11px] tracking-[0.5em] font-bold text-[#8f7322]/50 mb-1">
-                            වේලාව
-                          </div>
-                          <div className="text-base md:text-lg text-[#8f7322] tracking-wide font-bold">
-                            පෝරුව චාරිත්‍ර {INVITATION.time.ceremonyStart}ට
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 rounded-full bg-[#8f7322]/10 flex items-center justify-center shrink-0 border border-[#8f7322]/20 shadow-inner">
-                          <MapPin className="w-5 h-5 text-[#8f7322]" />
-                        </div>
-                        <div className="pt-1">
-                          <div className="text-xs md:text-[11px] tracking-[0.5em] font-bold text-[#8f7322]/50 mb-1">
-                            ස්ථානය
-                          </div>
-                          <div className="text-base md:text-lg text-[#8f7322] tracking-wide font-bold">
-                            {INVITATION.venue.name}, {INVITATION.venue.city}
-                          </div>
-                          <a
-                            href={INVITATION.venue.googleMapsLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mt-2 inline-flex text-[10px] md:text-xs text-[#b5932f] hover:text-[#1b4332] font-bold tracking-widest uppercase border-b border-[#b5932f]/30 hover:border-[#1b4332] transition-colors pb-0.5"
-                          >
-                            View on Google Maps
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </motion.div>
+                <div className="relative">
+                  <div className="rounded-2xl overflow-hidden" style={{ background: "#FCF8EE", border: "1px solid rgba(185, 138, 47, 0.4)", boxShadow: "0 18px 38px -28px rgba(140, 100, 32, 0.35)" }}>
+                    <a href={INVITATION.venue.googleMapsLink} target="_blank" rel="noopener noreferrer" className="w-full flex items-center text-left transition-colors hover:bg-white/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 gap-4 px-4 sm:px-5 py-4">
+                      <span className="flex-shrink-0 rounded-full flex items-center justify-center transition-colors w-10 h-10" style={{ background: "linear-gradient(135deg, #B98A2F, #8C6420)" }}>
+                        <MapPin className="w-5 h-5 text-[#FDF8EC]" />
+                      </span>
+                      <span className="flex-1 min-w-0">
+                        <span className="block leading-tight text-lg" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", color: "#8C6420" }}>Google Maps</span>
+                        <span className="block text-xs mt-0.5" style={{ color: "rgba(90, 74, 51, 0.65)" }}>ස්ථානය සොයා ගන්න</span>
+                      </span>
+                      <span className="flex-shrink-0 rounded-full flex items-center justify-center w-8 h-8" style={{ backgroundColor: "rgba(140, 100, 32, 0.06)" }}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right w-4 h-4" style={{ color: "rgb(140, 100, 32)" }}><path d="m9 18 6-6-6-6"></path></svg>
+                      </span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </section>
 
-            <section className="relative py-14 md:py-48 bg-[#8f7322] flex flex-col items-center overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/20 via-transparent to-black/20 pointer-events-none" />
+            <section id="venue" className="mx-auto max-w-5xl px-6 py-9 sm:px-7 sm:py-12 relative z-10 w-full"
+              style={{
+                backgroundImage: 'url("/vintage_paper.png")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}>
+              <div className="mb-10 text-center sm:mb-14">
+                <span className="mb-2 block text-[0.66rem] uppercase" style={{ color: "#B98A2F", fontFamily: "'Montserrat', sans-serif", letterSpacing: "0.34em" }}>Location</span>
+                <h2 className="leading-tight" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 700, color: "#8C6420", fontSize: "clamp(1.7rem,4.2vw,2.6rem)" }}>උත්සව ස්ථානය</h2>
+                <div aria-hidden="true" className="mt-3" style={{ width: "120px", aspectRatio: "2100 / 756", margin: "0 auto", background: "linear-gradient(180deg, #D8B45F 0%, #B98A2F 55%, #8C6420 100%)", WebkitMaskImage: "url(/lotus-mandala/lotus-flourish.svg)", maskImage: "url(/lotus-mandala/lotus-flourish.svg)", WebkitMaskRepeat: "no-repeat", maskRepeat: "no-repeat", WebkitMaskSize: "contain", maskSize: "contain", WebkitMaskPosition: "center", maskPosition: "center" }}></div>
+              </div>
+              <div className="flex flex-col gap-12 sm:gap-16">
+                <div className="grid items-stretch gap-5 sm:gap-8 md:grid-cols-[0.85fr_1.15fr]">
+                  <div className="flex flex-col justify-center">
+                    <div className="flex flex-col items-center gap-3 px-8 py-9 text-center" style={{ background: "#FCF8EE", border: "1px solid rgba(185, 138, 47, 0.35)", borderRadius: "26px 26px 18px 18px", boxShadow: "0 16px 36px -26px rgba(120,86,30,0.45)" }}>
+                      <img src="/Gemini_Generated_Image_1vpm5j1vpm5j1vpm.jpg" alt="රොන්ග්ෆා රීජන්සි (කිංග්ස් කෝර්ට්)" loading="lazy" draggable="false" className="mb-2 w-full max-w-[440px] select-none rounded-[14px]" style={{ opacity: 0.95 }} />
+                      <div className="flex flex-col gap-1">
+                        <span className="text-[0.62rem] uppercase tracking-[0.3em]" style={{ fontFamily: "'Montserrat', sans-serif", color: "#B98A2F" }}>Venue</span>
+                        <h3 style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 700, color: "#8C6420", fontSize: "1.2rem", lineHeight: 1.35 }}>රොන්ග්ෆා රීජන්සි (කිංග්ස් කෝර්ට්)</h3>
+                        <p className="text-[0.95rem]" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", color: "#8A7A60" }}>කොසින්න හන්දිය, කඩවත - ගණේමුල්ල පාර, ගණේමුල්ල, ශ්‍රී ලංකා.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-4">
+                    <div className="relative min-h-[300px] flex-1 overflow-hidden" style={{ borderRadius: "18px", border: "1px solid rgba(185, 138, 47, 0.4)", boxShadow: "0 28px 56px -34px rgba(120,86,30,0.5)" }}>
+                      <iframe title="Map of රොන්ග්ෆා රීජන්සි" src={`https://maps.google.com/maps?q=${encodeURIComponent("Rongfa Regency, Ganemulla")}&z=14&output=embed`} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="absolute inset-0 h-full w-full border-0" style={{ filter: "grayscale(0.2) saturate(0.9)" }}></iframe>
+                    </div>
+                    <a href={INVITATION.venue.googleMapsLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 self-center rounded-full px-7 py-3 text-[0.95rem] transition-transform duration-200 hover:-translate-y-0.5 active:scale-95" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 600, background: "linear-gradient(135deg, #B98A2F, #8C6420)", color: "#FDF8EC", boxShadow: "0 14px 26px -14px rgba(120,86,30,0.7)" }}>
+                      <MapPin className="h-4 w-4" /> සිතියමෙන් බලන්න
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
 
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 0.1, scale: 1 }}
-                transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
-                className="absolute -top-24 -right-24 w-96 h-96 bg-white blur-[100px] rounded-full pointer-events-none"
-              />
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 0.1, scale: 1 }}
-                transition={{ duration: 4, repeat: Infinity, repeatType: "reverse", delay: 1 }}
-                className="absolute -bottom-24 -left-24 w-96 h-96 bg-white blur-[100px] rounded-full pointer-events-none"
-              />
 
-              <div className="w-full max-w-[1200px] px-6 flex flex-col items-center text-center relative z-10">
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1 }}
-                  className="relative mb-12 md:mb-20"
-                >
-                  <div className="relative z-10 flex flex-col items-center">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: "80px" }}
-                      viewport={{ once: true }}
-                      className="h-px bg-white/40 mb-8"
+            <section id="rsvp" className="px-6 py-9 sm:px-7 sm:py-12 relative z-10 w-full" style={{ background: "rgba(237, 223, 184, 0.4)" }}>
+              <div className="mx-auto max-w-xl text-center">
+                <span className="mb-2 block text-[0.66rem] uppercase" style={{ color: "#B98A2F", fontFamily: "'Montserrat', sans-serif", letterSpacing: "0.34em" }}>RSVP</span>
+                <h2 style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 700, color: "#8C6420", fontSize: "clamp(1.6rem,4vw,2.3rem)" }}>පැමිණීම දන්වන්න</h2>
+                <div aria-hidden="true" className="mt-3" style={{ width: "120px", aspectRatio: "2100 / 756", margin: "0 auto", background: "linear-gradient(180deg, #D8B45F 0%, #B98A2F 55%, #8C6420 100%)", WebkitMaskImage: "url(/lotus-mandala/lotus-flourish.svg)", maskImage: "url(/lotus-mandala/lotus-flourish.svg)", WebkitMaskRepeat: "no-repeat", maskRepeat: "no-repeat", WebkitMaskSize: "contain", maskSize: "contain", WebkitMaskPosition: "center", maskPosition: "center" }}></div>
+                
+                <p className="mx-auto mb-2 mt-5 max-w-[44ch] leading-[1.85]" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", color: "#8A7A60" }}>
+                  ඔබගේ පැමිණීම අපට මහත් සතුටකි. කරුණාකර කලින් දන්වන්න.
+                </p>
+                <p className="mb-9 text-[0.95rem]" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 600, color: "#8C6420" }}>
+                  ඔබගේ පැමිණීම 2027 ජනවාරි 10 දිනට පෙර කරුණාකර දන්වන්න
+                </p>
+                
+                <form onSubmit={handleRsvpSubmit} className="rounded-[120px_120px_22px_22px] px-6 pb-10 pt-16 text-left sm:px-12 sm:pt-20" style={{ background: "#FCF8EE", border: "1px solid rgba(185, 138, 47, 0.4)", boxShadow: "0 30px 60px -40px rgba(120,86,30,0.45)" }}>
+                  <div className="mb-5 flex flex-col gap-1.5">
+                    <label htmlFor="lm-name" className="text-[0.9rem]" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 600, color: "#8C6420" }}>සම්පූර්ණ නම</label>
+                    <input 
+                      id="lm-name" 
+                      type="text" 
+                      required 
+                      placeholder="ඔබගේ නම" 
+                      className="w-full px-4 py-3 focus:outline-none" 
+                      style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", background: "#FCF8EE", border: "1px solid rgba(185, 138, 47, 0.45)", borderRadius: "10px", color: "#5A4A33" }} 
+                      value={rsvpForm.name}
+                      onChange={(e) => {
+                        setRsvpStatus("idle");
+                        setRsvpForm((prev) => ({ ...prev, name: e.target.value }));
+                      }}
                     />
-
-                    <h2 className="text-3xl md:text-6xl text-white tracking-[0.25em] md:tracking-[0.4em] font-bold leading-tight">
-                      මෙම දිනය <span className="mx-2 md:mx-4 text-[#fdf8e6]">සුරකින්න</span>
-                    </h2>
-
-                    <div className="mt-10 flex items-center justify-center gap-6">
-                      <div className="h-[0.5px] w-8 md:w-16 bg-[#fdf8e6]/50" />
-                      <span className="font-numeric text-3xl md:text-5xl text-[#fdf8e6] drop-shadow-md">
-                        {INVITATION.date.displayNumeric}
-                      </span>
-                      <div className="h-[0.5px] w-8 md:w-16 bg-[#fdf8e6]/50" />
+                  </div>
+                  
+                  <div className="mb-5">
+                    <p className="mb-2.5 text-[0.9rem]" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 600, color: "#8C6420" }}>සහභාගි වෙනවාද?</p>
+                    <div className="flex gap-3">
+                      <button 
+                        type="button" 
+                        onClick={() => {
+                          setRsvpStatus("idle");
+                          setRsvpForm((prev) => ({ ...prev, guests: "1" }));
+                        }}
+                        className="flex-1 px-3 py-3.5 text-center transition-colors" 
+                        style={{ 
+                          borderRadius: "10px", 
+                          border: "1px solid rgba(185, 138, 47, 0.45)", 
+                          background: rsvpForm.guests !== "0" ? "linear-gradient(135deg, #B98A2F, #8C6420)" : "transparent",
+                          color: rsvpForm.guests !== "0" ? "#FDF8EC" : "#8A7A60",
+                          fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", 
+                          fontWeight: 600 
+                        }}>
+                        සතුටින් සහභාගි වෙමි
+                      </button>
+                      <button 
+                        type="button" 
+                        onClick={() => {
+                          setRsvpStatus("idle");
+                          setRsvpForm((prev) => ({ ...prev, guests: "0" }));
+                        }}
+                        className="flex-1 px-3 py-3.5 text-center transition-colors" 
+                        style={{ 
+                          borderRadius: "10px", 
+                          border: "1px solid rgba(185, 138, 47, 0.45)", 
+                          background: rsvpForm.guests === "0" ? "linear-gradient(135deg, #B98A2F, #8C6420)" : "transparent",
+                          color: rsvpForm.guests === "0" ? "#FDF8EC" : "#8A7A60",
+                          fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", 
+                          fontWeight: 600 
+                        }}>
+                        සහභාගි විය නොහැක
+                      </button>
                     </div>
                   </div>
-                </motion.div>
-
-                <CountdownTimer isDark />
-
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 0.8 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.8 }}
-                  className="mt-12 md:mt-20 flex flex-col items-center gap-4"
-                >
-                  <p className="text-sm md:text-base tracking-[0.6em] text-white font-bold text-center">
-                    ආදරයෙන් පිරුණු මොහොතකට රැඳී සිටින්න
-                  </p>
-
-                  <div className="flex gap-2">
-                    {[1, 2, 3].map((i) => (
-                      <motion.div
-                        key={i}
-                        animate={{ scale: [1, 1.5, 1], opacity: [0.3, 1, 0.3] }}
-                        transition={{ duration: 2, repeat: Infinity, delay: i * 0.4 }}
-                        className="w-1 h-1 bg-[#fdf8e6] rotate-45"
-                      />
-                    ))}
-                  </div>
-                </motion.div>
-              </div>
-            </section>
-
-
-            <section className="relative py-16 md:py-48 bg-transparent flex flex-col items-center overflow-hidden">
-              <div className="container mx-auto px-4 max-w-4xl flex flex-col items-center relative z-10 w-full">
-                <motion.h2
-                  initial={{ opacity: 0, y: -20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="text-2xl md:text-4xl text-slate-800 tracking-[0.3em] mb-8 md:mb-12 text-center"
-                >
-                  පැමිණීම තහවුරු කිරීම
-                </motion.h2>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
-                  viewport={{ once: true }}
-                  className="relative w-full max-w-[650px] bg-white p-6 md:p-10 shadow-[0_40px_100px_-25px_rgba(0,0,0,0.12)] flex flex-col items-center"
-                >
-                  <div className="w-full rounded-[1.5rem] p-6 md:p-8 flex flex-col items-center">
-                    <h3 className="text-2xl md:text-4xl text-slate-800 mb-8 text-center">
-                      ඔබ පැමිණෙන්නේද?
-                    </h3>
-
-                    <form className="w-full space-y-6 text-left" onSubmit={handleRsvpSubmit}>
-                      <div className="space-y-2">
-                        <label className="text-xs font-bold text-slate-500 ml-1">ඔබගේ නම</label>
-                        <input
-                          type="text"
-                          placeholder="ඔබගේ නම මෙහි ලියන්න..."
-                          value={rsvpForm.name}
-                          onChange={(e) => {
-                            setRsvpStatus("idle");
-                            setRsvpForm((prev) => ({ ...prev, name: e.target.value }));
-                          }}
-                          className="w-full bg-white rounded-lg px-4 py-3 text-slate-800 placeholder:text-slate-300 focus:outline-none focus:ring-1 focus:ring-slate-400 transition-all text-base font-numeric"
-                          required
-                        />
-                      </div>
-
-                      <div className="space-y-4 pt-2">
-                        <label className="text-xs font-bold text-slate-500 ml-1">
-                          අපගේ විශේෂ දිනයට ඔබ පැමිණෙන්නේද?
-                        </label>
-
-                        <button
-                          type="button"
+                  
+                  {rsvpForm.guests !== "0" && (
+                    <div className="mb-5">
+                      <p className="mb-2.5 text-[0.9rem]" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 600, color: "#8C6420" }}>පැමිණෙන ගණන</p>
+                      <div className="flex items-center justify-center gap-6">
+                        <button 
+                          type="button" 
                           onClick={() => {
-                            setRsvpStatus("idle");
-                            setRsvpForm((prev) => ({ ...prev, guests: "1" }));
+                            setRsvpForm(prev => {
+                              const current = parseInt(prev.guests) || 1;
+                              return { ...prev, guests: Math.max(1, current - 1).toString() };
+                            });
                           }}
-                          aria-pressed={rsvpForm.guests !== "0"}
-                          className={`w-full py-5 md:py-6 rounded-xl text-sm md:text-base tracking-wide transition-all shadow-sm flex items-center justify-center px-4 leading-relaxed active:scale-[0.98] ${rsvpForm.guests !== "0" ? "bg-[#8f7322] text-white hover:bg-[#1a5c4a]" : "bg-[#f3f3f3] hover:bg-slate-200 text-slate-700"}`}
-                        >
-                          ඔව්, මම ආදරයෙන් පැමිණෙන්නම්!
+                          className="grid h-11 w-11 place-items-center rounded-full text-xl transition-all hover:opacity-80 active:scale-90" 
+                          style={{ background: "rgba(185, 138, 47, 0.12)", color: "#8C6420", border: "1px solid rgba(185, 138, 47, 0.5)" }} 
+                          aria-label="Decrease guest count">
+                          -
                         </button>
-
-                        <button
-                          type="button"
+                        <span className="leading-none" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", color: "#8C6420", fontSize: "2.6rem", minWidth: "3rem", textAlign: "center" }}>
+                          {parseInt(rsvpForm.guests) || 1}
+                        </span>
+                        <button 
+                          type="button" 
                           onClick={() => {
-                            setRsvpStatus("idle");
-                            setRsvpForm((prev) => ({ ...prev, guests: "0" }));
+                            setRsvpForm(prev => {
+                              const current = parseInt(prev.guests) || 1;
+                              return { ...prev, guests: (current + 1).toString() };
+                            });
                           }}
-                          aria-pressed={rsvpForm.guests === "0"}
-                          className={`w-full py-5 md:py-6 rounded-xl text-sm md:text-base tracking-wide transition-all shadow-sm flex items-center justify-center px-4 leading-relaxed active:scale-[0.98] ${rsvpForm.guests === "0" ? "bg-[#8f7322] text-white hover:bg-[#1a5c4a]" : "bg-[#f3f3f3] hover:bg-slate-200 text-slate-700"}`}
-                        >
-                          කණගාටුයි, මට පැමිණිය නොහැක. නමුත් මගේ ආශීර්වාදය ඔබ සමඟයි.
+                          className="grid h-11 w-11 place-items-center rounded-full text-xl transition-all hover:opacity-80 active:scale-90" 
+                          style={{ background: "rgba(185, 138, 47, 0.12)", color: "#8C6420", border: "1px solid rgba(185, 138, 47, 0.5)" }} 
+                          aria-label="Increase guest count">
+                          +
                         </button>
                       </div>
-
-                      {(rsvpStatus === "success" || rsvpStatus === "error") && (
-                        <p
-                          className={`text-xs text-center font-semibold ${rsvpStatus === "success" ? "text-emerald-600" : "text-red-500"
-                            }`}
-                        >
-                          {rsvpStatus === "success"
-                            ? "ඔබගේ පැමිණීම තහවුරු කිරීම සාර්ථකව යවා ඇත."
-                            : "කරුණාකර ඔබගේ නම ඇතුළත් කර නැවත උත්සාහ කරන්න."}
-                        </p>
-                      )}
-
-                      <div className="pt-6">
-                        <button
-                          type="submit"
-                          disabled={rsvpStatus === "sending"}
-                          className="w-full bg-[#8f7322] text-white py-4 md:py-5 rounded-xl text-sm md:text-base tracking-[0.2em] font-bold hover:bg-[#1a5c4a] transition-all shadow-md disabled:opacity-70"
-                        >
-                          {rsvpStatus === "sending" ? "යවමින්..." : "තහවුරු කරන්න"}
-                        </button>
-
-                        <p className="text-xs text-slate-400 mt-4 text-center leading-relaxed">
-                          ඔබගේ ප්‍රතිචාරය පුද්ගලිකව තබා ගනු ලැබේ.
-                        </p>
-                      </div>
-                    </form>
-                  </div>
-                </motion.div>
-
-
-              </div>
-            </section>
-
-
-
-
-
-
-            <section className="w-full relative overflow-hidden bg-transparent py-14 md:py-32">
-              <div className="container mx-auto px-6 max-w-5xl text-center">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1.0 }}
-                  className="space-y-6"
-                >
-                  <div className="flex items-center justify-center gap-3 opacity-70">
-                    <div className="h-px w-10 bg-[#8f7322]/20" />
-                    <Sparkles className="w-4 h-4 text-[#b5932f]" />
-                    <div className="h-px w-10 bg-[#8f7322]/20" />
-                  </div>
-
-                  <h2 className="text-5xl md:text-7xl bg-gradient-to-r from-[#7a1f1a] via-[#8f7322] to-[#7a1f1a] bg-clip-text text-transparent italic">
-                    ස්තූතියි
-                  </h2>
-
-                  <p className="text-[#473c1f] text-sm md:text-base tracking-[0.25em] font-bold leading-loose max-w-3xl mx-auto">
-                    සෙනෙහසින් ලියැවෙන අපගේ ජීවිත කතාවේ සුන්දරතම දිනය, ඔබගේ පැමිණීමෙන් තවත් අර්ථවත් වනු ඇතැයි අප විශ්වාස කරමු
-                  </p>
-
-                  <div className="pt-6 flex flex-col items-center gap-4 text-center w-full max-w-xl mx-auto">
-                    <div className="h-px w-24 bg-[#8f7322]/40" />
-                    <p className="text-[#7a1f1a] text-xs tracking-[0.4em] font-bold mt-2">
-                      සම්බන්ධතා
+                    </div>
+                  )}
+                  
+                  {(rsvpStatus === "success" || rsvpStatus === "error") && (
+                    <p className={`text-xs text-center font-semibold mb-4 ${rsvpStatus === "success" ? "text-emerald-600" : "text-red-500"}`}>
+                      {rsvpStatus === "success"
+                        ? "ඔබගේ පැමිණීම තහවුරු කිරීම සාර්ථකව යවා ඇත."
+                        : "කරුණාකර ඔබගේ නම ඇතුළත් කර නැවත උත්සාහ කරන්න."}
                     </p>
+                  )}
+                  
+                  <button type="submit" disabled={rsvpStatus === "sending"} className="inline-flex w-full items-center justify-center gap-2.5 rounded-full py-4 text-[1.02rem] transition-transform duration-200 hover:-translate-y-0.5 active:scale-95 disabled:opacity-60" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 700, background: "linear-gradient(135deg, #B98A2F, #8C6420)", color: "#FDF8EC", boxShadow: "0 14px 30px -12px rgba(120,86,30,0.6)" }}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-send h-4 w-4" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>
+                    {rsvpStatus === "sending" ? "යවමින්..." : "පිළිතුර යවන්න"}
+                  </button>
+                </form>
+              </div>
+            </section>
 
-                    <div className="flex flex-wrap justify-center gap-x-10 gap-y-2 text-[#473c1f] text-base tracking-widest font-bold">
-                      {INVITATION.rsvpContacts.map((line) => (
-                        <p key={line}>{line}</p>
-                      ))}
-                    </div>
+
+
+
+
+
+            <section id="footer" className="relative overflow-hidden w-full">
+              <div className="relative px-6 py-9 text-center sm:py-12" style={{ background: "linear-gradient(180deg, #8C6420 0%, #6E4D16 100%)", color: "#F8F1DC" }}>
+                <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.08]" aria-hidden="true">
+                  <div style={{ width: "420px", height: "420px", transform: "rotate(258.188deg)" }}>
+                    <div aria-hidden="true" style={{ width: "100%", height: "100%", background: "#F8F1DC", WebkitMaskImage: "url(/Gemini_Generated_Image_e4kwdre4kwdre4kw-removebg-preview.png)", maskImage: "url(/Gemini_Generated_Image_e4kwdre4kwdre4kw-removebg-preview.png)", WebkitMaskRepeat: "no-repeat", maskRepeat: "no-repeat", WebkitMaskSize: "contain", maskSize: "contain", WebkitMaskPosition: "center", maskPosition: "center" }}></div>
                   </div>
-
-                  <p className="text-sm md:text-base tracking-[0.5em] text-[#5e4a13] font-bold pt-12">
-                    © 2026 {INVITATION.couple.bride} සහ {INVITATION.couple.groom}
-                  </p>
-                </motion.div>
+                </div>
+                
+                <div className="relative z-10">
+                  <div className="text-[0.7rem] uppercase tracking-[0.4em]" style={{ fontFamily: "'Montserrat', sans-serif", opacity: 0.85 }}>Save the date</div>
+                  <div className="my-3.5" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 500, fontSize: "clamp(2.4rem,9vw,5rem)", lineHeight: 1, letterSpacing: "0.04em" }}>
+                    28 . 01 . 27
+                  </div>
+                  <div className="mb-6 text-[1.05rem] leading-[1.85]" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", color: "#EDDFB8" }}>
+                    ආදරයෙන්, දෙපවුලේ ආරාධනයයි
+                  </div>
+                  
+                  <div className="relative mx-auto mb-7" style={{ width: "150px", height: "54px" }}>
+                    <div aria-hidden="true" className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" style={{ width: "130px", height: "130px", borderRadius: "50%", background: "radial-gradient(50% 50%, rgba(251, 241, 212, 0.55) 0%, rgba(251, 241, 212, 0) 70%)", transform: "scale(1.0466)" }}></div>
+                    <div aria-hidden="true" style={{ position: "relative", width: "150px", height: "54px", opacity: 0.95, background: "#EDDFB8", WebkitMaskImage: "url(/lotus-mandala/lotus-flourish.svg)", maskImage: "url(/lotus-mandala/lotus-flourish.svg)", WebkitMaskRepeat: "no-repeat", maskRepeat: "no-repeat", WebkitMaskSize: "contain", maskSize: "contain", WebkitMaskPosition: "center", maskPosition: "center" }}></div>
+                  </div>
+                  
+                  <div className="flex flex-wrap items-center justify-center gap-3">
+                    <a href="tel:+94715439474" aria-label="Call චානක" className="inline-flex items-center gap-2 whitespace-nowrap rounded-full px-4 py-2.5 text-[0.92rem] transition-transform duration-200 hover:-translate-y-0.5 active:scale-95 sm:px-6" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 600, background: "rgba(253,248,236,0.12)", border: "1px solid rgba(237, 223, 184, 0.6)", color: "#F8F1DC" }}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-phone h-3.5 w-3.5" aria-hidden="true" style={{ color: "#EDDFB8" }}><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg> 
+                      චානක · +94 71 54 39 474
+                    </a>
+                    <a href="tel:+94715659441" aria-label="Call හංසිනී" className="inline-flex items-center gap-2 whitespace-nowrap rounded-full px-4 py-2.5 text-[0.92rem] transition-transform duration-200 hover:-translate-y-0.5 active:scale-95 sm:px-6" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 600, background: "rgba(253,248,236,0.12)", border: "1px solid rgba(237, 223, 184, 0.6)", color: "#F8F1DC" }}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-phone h-3.5 w-3.5" aria-hidden="true" style={{ color: "#EDDFB8" }}><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg> 
+                      හංසිනී · +94 71 56 59 441
+                    </a>
+                  </div>
+                  
+                  <div className="mt-14 opacity-80 transition-opacity hover:opacity-100">
+                    <p className="text-[#D4AF37] text-[0.7rem] sm:text-xs font-sans tracking-wider" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                      Want a beautiful wedding website like this? Create yours with <a target="_blank" rel="noreferrer" className="text-white hover:text-[#D4AF37] underline transition-colors" href="https://wa.me/94707819074">invitemint</a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </section>
           </motion.div>
@@ -967,6 +942,10 @@ export default function WeddingInvitation() {
             .dl-manel-bold,
             .dl-manel-bold * {
               font-family: 'Abhaya Libre', Arial, sans-serif !important;
+            }
+
+            span.font-nimsara {
+              font-family: 'nimsara' !important;
             }
 
             input,
