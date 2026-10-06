@@ -390,6 +390,7 @@ export default function WeddingInvitation() {
                   playsInline
                   preload="auto"
                   autoPlay
+                  muted
                   className="w-full h-full object-cover z-50 absolute inset-0 opacity-80"
                   onEnded={() => {
                     setIsOpened(true);
