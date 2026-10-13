@@ -547,8 +547,8 @@ export default function WeddingInvitation() {
                   </div>
                   <div className="flex flex-col items-center gap-3">
                     <p className="text-[0.95rem] leading-[1.8] sm:text-base text-[#5A4A33] whitespace-pre-line" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
-                      ආර්. ඒ. සුමිත් රණසිංහ සහ
-                      පී. ඒ. ඈන් තෙරේස් ප්‍රියන්තිනි
+                      ආර්. ඒ සුමිත් රණසිංහ සහ
+                      පී. ඒ ඈන් තෙරෙස් ප්‍රියන්තිනී
                       යන දෙපළගේ
                       ආදරණීය පුත්‍රයා
                     </p>
@@ -588,9 +588,6 @@ export default function WeddingInvitation() {
                   <div className="mt-2.5 text-[1rem] text-[#5A4A33]" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
                     {INVITATION.time.welcome} සිට {INVITATION.time.ceremonyEnd} දක්වා
                   </div>
-                  <p className="mt-1 text-[0.92rem]" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", color: "#8A7A60" }}>
-                    (පෝරුවේ චාරිත්‍ර {INVITATION.time.ceremonyStart} ට | විවාහ ලියාපදිංචිය {INVITATION.time.registration} ට)
-                  </p>
                 </div>
                 
                 <div className="mt-6 flex flex-col items-center gap-1.5">
@@ -881,7 +878,7 @@ export default function WeddingInvitation() {
                     28 . 01 . 27
                   </div>
                   <div className="mb-6 text-[1.05rem] leading-[1.85]" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", color: "#EDDFB8" }}>
-                    ආදරයෙන්, දෙපවුලේ ආරාධනයයි
+                    සෙනෙහබර මව්පිය ආශීර්වාද පෙරදැරිව ප්‍රේමවන්ත හදවත් දෙකක් එකතු වන අපගේ සුන්දර දිනයට අපෙන් ඔබට පිදෙන ආදරනීය ඇරයුමයි.
                   </div>
                   
                   <div className="relative mx-auto mb-7" style={{ width: "150px", height: "54px" }}>
@@ -900,7 +897,7 @@ export default function WeddingInvitation() {
                     </a>
                   </div>
                   
-                  <div className="mt-14 opacity-80 transition-opacity hover:opacity-100">
+                  <div className="mt-14 pb-20 opacity-80 transition-opacity hover:opacity-100">
                     <p className="text-[#D4AF37] text-[0.7rem] sm:text-xs font-sans tracking-wider" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                       Want a beautiful wedding website like this? Create yours with <a target="_blank" rel="noreferrer" className="text-white hover:text-[#D4AF37] underline transition-colors" href="https://wa.me/94707819074">invitemint</a>
                     </p>
