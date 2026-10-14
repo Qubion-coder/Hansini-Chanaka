@@ -6,7 +6,7 @@ const INVITATION = {
   couple: {
     bride: "හංසිනී",
     groom: "චානක",
-    brideFull: "හංසිනී",
+    brideFull: "හංසිනී කාංචනා",
     groomFull: "චානක රණසිංහ",
   },
   date: {
@@ -539,9 +539,9 @@ export default function WeddingInvitation() {
                       යන දෙපළගේ
                       ආදරණීය දියණිය
                     </p>
-                    <p className="mt-auto" aria-label="හංසිනී">
+                    <p className="mt-auto" aria-label="හංසිනී කාංචනා">
                       <span aria-hidden="true" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 700, color: "#8C6420", fontSize: "clamp(1.4rem,4.2vw,2rem)", lineHeight: 1.15 }}>
-                        හංසිනී
+                        හංසිනී කාංචනා
                       </span>
                     </p>
                   </div>
