@@ -6,7 +6,7 @@ const INVITATION = {
   couple: {
     bride: "හංසිනී",
     groom: "චානක",
-    brideFull: "හංසිනී කාංචනා",
+    brideFull: "හංසිනී",
     groomFull: "චානක රණසිංහ",
   },
   date: {
@@ -470,7 +470,7 @@ export default function WeddingInvitation() {
                 </span>
               </div>
               <p className="leading-[1.1] flex items-center justify-center gap-4" style={{ color: "rgb(122, 31, 26)", fontSize: "clamp(2.5rem, 8vw, 4rem)" }}>
-                <span className="font-nimsara">yxisks</span> 
+                <span className="font-nimsara">yxiskS</span> 
                 <span className="font-nimsara" style={{ color: "rgb(142, 116, 39)", fontSize: "clamp(1.5rem, 5vw, 2.5rem)" }}>iy</span> 
                 <span className="font-nimsara">pdkl</span>
               </p>
@@ -539,16 +539,16 @@ export default function WeddingInvitation() {
                       යන දෙපළගේ
                       ආදරණීය දියණිය
                     </p>
-                    <p className="mt-auto" aria-label="හංසිනී කාංචනා">
+                    <p className="mt-auto" aria-label="හංසිනී">
                       <span aria-hidden="true" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 700, color: "#8C6420", fontSize: "clamp(1.4rem,4.2vw,2rem)", lineHeight: 1.15 }}>
-                        හංසිනී කාංචනා
+                        හංසිනී
                       </span>
                     </p>
                   </div>
                   <div className="flex flex-col items-center gap-3">
                     <p className="text-[0.95rem] leading-[1.8] sm:text-base text-[#5A4A33] whitespace-pre-line" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif" }}>
                       ආර්. ඒ සුමිත් රණසිංහ සහ
-                      පී. ඒ ඈන් තෙරෙස් ප්‍රියන්තිනී
+                      <span className="block whitespace-nowrap" style={{ fontSize: "clamp(0.72rem, 3.3vw, 1rem)" }}>පී.ඒ.ඈන් තෙරෙස් ප්‍රියන්තිනී</span>
                       යන දෙපළගේ
                       ආදරණීය පුත්‍රයා
                     </p>
@@ -831,7 +831,7 @@ export default function WeddingInvitation() {
                           onClick={() => {
                             setRsvpForm(prev => {
                               const current = parseInt(prev.guests) || 1;
-                              return { ...prev, guests: (current + 1).toString() };
+                              return { ...prev, guests: Math.min(10, current + 1).toString() };
                             });
                           }}
                           className="grid h-11 w-11 place-items-center rounded-full text-xl transition-all hover:opacity-80 active:scale-90" 
@@ -878,7 +878,7 @@ export default function WeddingInvitation() {
                     28 . 01 . 27
                   </div>
                   <div className="mb-6 text-[1.05rem] leading-[1.85]" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", color: "#EDDFB8" }}>
-                    සෙනෙහබර මව්පිය ආශීර්වාද පෙරදැරිව ප්‍රේමවන්ත හදවත් දෙකක් එකතු වන අපගේ සුන්දර දිනයට අපෙන් ඔබට පිදෙන ආදරනීය ඇරයුමයි.
+                    සෙනෙහබර මව්පිය ආශීර්වාදය පෙරදැරිව ප්‍රේමවන්ත හදවත් දෙකක් එකතු වන අපගේ සුන්දර දිනයට අපෙන් ඔබට පිදෙන ආදරනීය ඇරයුමයි.
                   </div>
                   
                   <div className="relative mx-auto mb-7" style={{ width: "150px", height: "54px" }}>
