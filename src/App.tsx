@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, MapPin, Calendar, Clock, ChevronDown } from "lucide-react";
+import { decodeGuest } from "./utils/guestLink";
 
 const INVITATION = {
   couple: {
@@ -34,7 +35,7 @@ const INVITATION = {
 
 const backgroundMusic = "/ssstik.io_1790155724397.mp3";
 const googleScriptUrl =
-  "https://script.google.com/macros/s/AKfycbx6tVTRxM0Fjc10fR0a35PjSjb9JJN-9F7zDpxyJvVMhdZ3A-_rOkAV8x8Cwpeqfp5NLw/exec";
+  "https://script.google.com/macros/s/AKfycbyEVACkFOzZzj1EBu16RWU4adZo30v5b6nFRlNMGezOMFGKthmSyrPOvQqGqO4Fj1mPjg/exec";
 
 const publicImagePath = (fileName: string) => `/images/${fileName.replaceAll(" ", "%20")}`;
 const preImagePath = (fileName: string) => `/pre/${fileName.replaceAll(" ", "%20")}`;
@@ -268,7 +269,9 @@ export default function WeddingInvitation() {
   const [isPlayingIntroVideo, setIsPlayingIntroVideo] = useState(false);
 
   const searchParams = new URLSearchParams(window.location.search);
-  const guestName = searchParams.get("to");
+  const shortGuest = searchParams.get("g") ? decodeGuest(searchParams.get("g")!) : null;
+  const guestName = shortGuest?.name ?? searchParams.get("to");
+  const guestPrefix = shortGuest?.prefix ?? searchParams.get("p");
 
   const [rsvpForm, setRsvpForm] = useState({
     name: "",
@@ -310,6 +313,7 @@ export default function WeddingInvitation() {
         action: "rsvp",
         name: rsvpForm.name.trim(),
         guests: rsvpForm.guests,
+        invitedAs: guestName ? `${guestName}${guestPrefix ? ` ${guestPrefix}` : ""}` : "",
         dietaryNotes: "",
       });
 
@@ -525,6 +529,11 @@ export default function WeddingInvitation() {
               
               <div className="relative mx-auto max-w-2xl px-6 text-center sm:px-8 pb-12 z-10 mt-6">
                 <div>
+                  {guestName && (
+                    <p className="mb-4 text-[1.05rem] sm:text-lg leading-[1.7]" style={{ fontFamily: "'Noto Sans Sinhala', 'Abhaya Libre', serif", fontWeight: 600, color: "#7A1F1A" }}>
+                      ආදරණීය {guestName}{guestPrefix ? ` ${guestPrefix}` : ""} ❤️
+                    </p>
+                  )}
                   <h1 aria-label="සාදර ඇරයුමයි !" className="-mt-1" style={{ fontSize: "clamp(2.1rem,8.5vw,3.4rem)", lineHeight: 1.25, backgroundImage: "linear-gradient(170deg, #D8B45F 0%, #B98A2F 45%, #8C6420 100%)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
                     <span aria-hidden="true" className="font-nimsara" style={{ fontVariantLigatures: "none" }}>idor werhquhs</span>
                     <span aria-hidden="true" style={{ fontFamily: "'Noto Sans Sinhala', sans-serif", fontWeight: 600 }}> !</span>
